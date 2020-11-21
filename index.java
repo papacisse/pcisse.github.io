@@ -30,7 +30,7 @@
 </script>
 
 <script>
-funtion getData(){
+function getData(){
 var request=XMLhttrequest();
 request.open('GET','cit5students.json')
 request.onload=funtion(){var data=JSON.parse(request.responseTExt);
