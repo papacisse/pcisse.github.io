@@ -30,14 +30,14 @@
 </script>
 
 <script>
-function getData(){
+function getData(selected_meal){
 var request=XMLhttrequest();
 request.open('GET','cit5students.json')
 request.onload=funtion(){var data=JSON.parse(request.responseTExt);
 
 major_items=[]
-for(i=0;i<data.length;i++)
-{if(data[i].major==selected_major){major_items.push(data}[i].major)
+ for(i=0;i<data.length;i++){
+   if(data[i].meal==selected_items){major_items.push(data[i].major);
 }
 }
 if (request.status==200){
